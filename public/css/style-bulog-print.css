@@ -1,0 +1,58 @@
+/* PRINT */
+.navbar, .pcoded-navbar, .breadcrumb-title, .card-header-print, .button-print{
+  display: none!important;
+}
+.pcoded-main-container{
+  margin-top: 0px!important;
+}
+.pcoded-content{
+  margin-left: 0px!important;
+}
+.breadcrumb-header h4, .card{
+  margin-bottom: 0px!important;
+}
+.card-print{
+  box-shadow: none!important;
+  border: 0px!important;
+}
+.card-print .card-header, .card-print .card-block{
+  padding: 0px!important;
+}
+.card-print .card-header:before{
+  display: none!important;
+}
+.card-detail-masterplan.card{
+  border: 1px solid #444444!important;
+  border-radius: 0px;
+  margin-bottom: 24px!important;
+}
+.card-detail-masterplan.card>.list-group:first-child .list-group-item:first-child{
+  border-top-left-radius: 0px!important;
+  border-top-right-radius: 0px!important;
+}
+.card-detail-masterplan.card>.list-group:last-child .list-group-item:last-child{
+  border-bottom-left-radius: 0px!important;
+  border-bottom-right-radius: 0px!important;
+  border-bottom: 0px!important;
+}
+.card-detail-masterplan.card .list-group-item{
+  background: transparent!important;
+  border-bottom: 1px solid #444444!important;
+}
+.table-print{
+  border: 1px solid #444444!important;
+}
+.table-print table.dataTable thead th, .table-print table.dataTable thead td, .table-print table.dataTable.no-footer{
+  border-bottom: 1px solid #444444!important;
+}
+.table-print table{
+  border: none!important;
+}
+.table-print thead th{
+  border-bottom: 1px solid #444444!important;
+}
+.card-title-print{
+  border: 1px solid #444444!important;
+  border-radius: 0px!important;
+  box-shadow: none!important;
+}
