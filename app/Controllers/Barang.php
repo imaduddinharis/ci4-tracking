@@ -2,6 +2,7 @@
 
 use CodeIgniter\Controller;
 use App\Models\Barangs;
+use App\Models\Lokasis;
 class Barang extends Controller
 {
     public function __construct(){
@@ -184,7 +185,9 @@ class Barang extends Controller
 			return redirect()->to('/auth');
 		}
         $model = new Barangs();
+        $model2 = new Lokasis();
         $model->where('id_barang', $id)->delete();
+        $model2->where('id_barang', $id)->delete();
         return redirect()->to('/barang');
     }
 
@@ -192,8 +195,8 @@ class Barang extends Controller
     {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $randstring = '';
-        for ($i = 0; $i < 10; $i++) {
-            $randstring = $characters[rand(0, strlen($characters))];
+        for ($i = 0; $i < 30; $i++) {
+            $randstring .= $characters[rand(0, strlen($characters))];
         }
         return $randstring;
     }
